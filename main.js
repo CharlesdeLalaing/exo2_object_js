@@ -31,11 +31,16 @@ let personnage2 = {
     ville : "Uccle",
 
     sePresenter2(){
-        let âge2 = prompt(`vous avez actuellement ${this.âge}, quel nouvel âge voulez vous mettre?`);
+        let âge2 = prompt(`Quel nouvel âge voulez vous mettre?`);
         personnage2.âge = âge2;
         delete âge2;
         alert(`Cool, ${this.prenom} a ${this.âge} ans`)
     }
+
+    // sePresenter2(){
+    //     this.âge = prompt(`Quel nouvel âge voulez vous mettre?`); //ajoût de l'âge dans l'objet. pas juste le remplacer
+    //     alert(`Cool, ${this.prenom} a ${this.âge} ans`)
+    // }
 }
 
 personnage2.sePresenter2();
