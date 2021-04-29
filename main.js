@@ -10,11 +10,12 @@ let personnage = {
     ville : "Uccle",
 
     sePresenter(){
-        console.log(`Bonjour, je m'apelle ${this.nom} ${this.prenom}.`);
+        console.log(`Bonjour, je m'apelle ${this.nom + this.prenom}.`);
     }
 }
 
 personnage.sePresenter();
+
 
 // ## Exo 2
 // ### Créer un objet avec un nom et une méthode
@@ -39,4 +40,50 @@ let personnage2 = {
 
 personnage2.sePresenter2();
 console.log(personnage2);
+
+
+// let nice = {
+//     nom = "Alain",
+//     ageNom(){
+//         this.age = prompt("changer age");
+//         alert(this.nom + " a " + this.age + " ans");
+//     }
+// }
+
+// nice.ageNom()
+
+
+// let famille =  {
+//     alix : {
+//         age : 23,
+//         taille : 178,
+//         nom : "de Lalaing",
+//         prenom : "Alix"
+//     },
+//     marina : {
+//         age : 49,
+//         taille : 178,
+//         nom : "de Lalaing",
+//         prenom : "Marina"
+//     },
+//     cedric : {
+//         age : 54,
+//         taille : 182,
+//         nom : "de Lalaing",
+//         prenom : "Cedric"
+//     },
+//     charles : {
+//         age : 22,
+//         taille : 193,
+//         nom : "de Lalaing",
+//         prenom : "Charles",
+//         râle(){
+//             console.log(`${famille.alix.prenom} fait trop la maline et ça saoule ${this.prenom}, je pense que ${famille.marina.prenom} va se facher et demander l'âge a ${famille.cedric.prenom} qui est de ${famille.cedric.age}.`)
+//         }
+//     }
+// }
+
+
+// famille.charles.râle();
+// console.log(famille.alix , famille.charles)
 
